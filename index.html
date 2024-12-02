@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funify - Spotify Clone</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Funify</h1>
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Search</a></li>
+            <li><a href="#">Your Library</a></li>
+        </ul>
+    </nav>
+</header>
+
+<div class="music-container">
+    <div class="now-playing">
+        <img src="assets/cover1.jpg" alt="Cover" id="cover">
+        <h3 id="song-title">Song 1</h3>
+    </div>
+    <audio id="audio" src="assets/song1.mp3"></audio>
+    <div class="controls">
+        <button id="prev">⏮️</button>
+        <button id="play">⏯️</button>
+        <button id="next">⏭️</button>
+    </div>
+</div>
+
+<div class="playlist">
+    <div class="song" onclick="loadSong(0)">
+        <img src="assets/cover1.jpg" alt="Song 1">
+        <h4>Song 1</h4>
+    </div>
+    <div class="song" onclick="loadSong(1)">
+        <img src="assets/cover2.jpg" alt="Song 2">
+        <h4>Song 2</h4>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
